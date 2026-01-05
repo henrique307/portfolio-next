@@ -1,0 +1,1 @@
+type Folder = "imagens" | "videos" | "idiomas" | "curriculos"

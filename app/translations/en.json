@@ -1,0 +1,291 @@
+{
+  "header": {
+    "sections": [
+      {
+        "nome": "About Me",
+        "link": "#eu"
+      },
+      {
+        "nome": "Services",
+        "link": "#servicos"
+      },
+      {
+        "nome": "Projects",
+        "link": "#trabalhos"
+      },
+      {
+        "nome": "Testimonials",
+        "link": "#testemunhos"
+      },
+      {
+        "nome": "Work With Me",
+        "link": "#action"
+      }
+    ]
+  },
+  "main": {
+    "intro": {
+      "greetings": "Hello, my name is Henrique! I am a",
+      "typing_values": [
+        "Frontend Developer.",
+        "Backend Developer.",
+        "Fullstack Developer.",
+        "Chatbot Developer.",
+        "Automation Developer.",
+        "Software Developer."
+      ],
+      "description": "Specialist in responsive web development, automations, payment integrations, chatbots, APIs, and dedicated to creating a creative solution for your technological needs!",
+      "contact": "Contact"
+    },
+    "experience": {
+      "header": {
+        "left_header": "More than 4 years of experience in scalable and adaptable Software Development",
+        "right_header": {
+          "main_header": "services",
+          "sub_header": "Discover the best services I offer, always focused on the success of your project."
+        }
+      },
+      "services": [
+        {
+          "header": "Front End",
+          "description": "Development of lightweight, elegant, and responsive interfaces, using the best tools on the market!"
+        },
+        {
+          "header": "Back End",
+          "description": "Scalable and optimized REST APIs, with Swagger documentation and data validation!"
+        },
+        {
+          "header": "Tools",
+          "description": "Experience with the most widely used tools in the market; Docker, Git, Swagger, Github, Bitbucket, Heroku, Vercel, and much more!"
+        }
+      ]
+    },
+    "projects": {
+      "header": {
+        "sub_header": "Some of my favorite projects",
+        "main_header": "projects & demos"
+      },
+      "projects": {
+        "link_text": "view project",
+        "cards": [
+          {
+            "title": "Bakery Ecommerce",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/bakery.png",
+            "description": "E-commerce integrated with Stripe payment API, the website aims to present its products and prices beautifully and concisely to the customer.",
+            "link": "https://henrique307.github.io/bakery-website",
+            "github": "https://github.com/henrique307/bakery-website"
+          },
+          {
+            "title": "Travel Landing Page",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/hevor.png",
+            "description": "Website for a travel agency, with responsive design aimed at providing the best possible user experience.",
+            "link": "https://henrique307.github.io/travels-website",
+            "github": "https://github.com/henrique307/travels-website"
+          },
+          {
+            "title": "Travel App | Draftbit",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/triplt.png",
+            "description": "Travel agency app made using the Draftbit tool based on a template, the app uses React Native in the code.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/aplicativo+de+viagens.mp4",
+            "github": ""
+          },
+          {
+            "title": "Real Estate App | Draftbit",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/Stay.png",
+            "description": "Real estate search app made using the Draftbit tool based on a template, the app uses React Native in the code.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/aplicativo+de+imoveis.mp4",
+            "github": ""
+          },
+          {
+            "title": "Google Sheets Integrated API",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/api.png",
+            "description": "API integrated with Google Sheets, executing all necessary CRUD operations to integrate with an application of your choice!",
+            "link": "http://54.219.136.176:8080/api/swagger",
+            "github": "https://github.com/henrique307/api-sheets"
+          },
+          {
+            "title": "Petshop REST API",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/petshop_api.png",
+            "description": "REST API built with NestJS (Framework that facilitates the creation of Express APIs quickly and organized) with JWT authentication using MongoDB as the database.",
+            "link": "http://54.219.136.176:3000/api/swagger",
+            "github": "https://github.com/henrique307/petshop-api"
+          },
+          {
+            "title": "Auth0 Multitenant Fullstack App",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/auth0.png",
+            "description": "Fullstack application with multitenant login using Auth0. The application allows participation in various teams through a multitenant login system.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_cliente_auth0-multitenant.mp4",
+            "github": ""
+          },
+          {
+            "title": "Automatic Billing Creation | Asaas + Bitrix24",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/bitrix+%2B+asaas.png",
+            "description": "Integration between Asaas and Bitrix24 platforms that automatically creates billings when a card is created, executing the entire billing process up to invoice request automatically.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/integra%C3%A7%C3%A3o+bitrix-assas.mp4",
+            "github": ""
+          },
+          {
+            "title": "Conversational Chatbot | OpenAI API + Telegram",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/openai-logo_1.png",
+            "description": "Conversational chatbot that acts as Carlos, a professor from a major university. The bot communicates using formal and elaborate language as configured, and uses Telegram as its platform.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/chatbot-conversacional-carlos-telegram-novitaai.mp4",
+            "github": "https://github.com/henrique307/Novita-ai-demo/"
+          },
+          {
+            "title": "AI Images Generator | Freepik API",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/freepik.png",
+            "description": "AI image generator chatbot using the Freepik API or NovitaAI. The chatbot includes a subscription feature with payment integration using the Mercado Pago API.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_bot_IA-imagens_telegram.mp4",
+            "github": ""
+          },
+          {
+            "title": "Ifood x Shipday Integration",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/ifood.png",
+            "description": "Integration between Ifood and Shipday platforms using a webhook to connect both applications through their respective APIs.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_ifood-shipday.mp4",
+            "github": ""
+          },
+          {
+            "title": "Typescript Selenium | Webscraper",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/selnode.png",
+            "description": "Web scraper using Selenium WebDriver and TypeScript. The application searches for product information on Mercado Livre through an API call that initiates the search. Filters can be set in the request body.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/webscrapper+selenium+typescript.mp4"
+          }
+        ]
+      }
+    },
+    "testimonials": {
+      "header": {
+        "main_header": "testimonials",
+        "sub_header": "What people say about my services 👀"
+      },
+      "testimonials": [
+        {
+          "name": "Mario",
+          "title": "Workana Client",
+          "profile": "",
+          "evaluation": "[...] Met all requested specifications, but also brought innovative ideas for improvements, demonstrating his commitment to excellence and proactivity. In addition, the delivery was done quickly. Congratulations on the exemplary work and dedication! I recommend to everyone!"
+        },
+        {
+          "name": "Alisson J.",
+          "title": "99Freelas Client",
+          "profile": "",
+          "evaluation": "Excellent professional! Demonstrated a deep understanding of our project and, in addition to executing it quickly, offered valuable suggestions for improvement, ensuring the result was as appropriate as possible."
+        },
+        {
+          "name": "Kaique B.",
+          "title": "99Freelas Client",
+          "profile": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/cliente-profiles/kaique-barreto.jpg",
+          "evaluation": "Very competent! Excellent work!"
+        }
+      ]
+    },
+    "action": {
+      "header": "🌍 Let's take over the world! 🚀",
+      "main": "Start developing the solution you need for your business to reach new heights now!",
+      "action": "Contact me!",
+      "form": {
+        "failure": {
+          "sending_error": {
+            "header": "There was an error sending your message",
+            "main": "Please try again or contact me through my social networks at the bottom of the page!"
+          },
+          "input_error": {
+            "name": {
+              "required": "This field is required"
+            },
+            "email": {
+              "required": "This field is required",
+              "invalid": "Invalid email"
+            },
+            "message": {
+              "required": "Don't be shy 😊",
+              "max_lenght": "Too much text 👀"
+            }
+          }
+        },
+        "success": {
+          "header": "Message sent successfully!",
+          "main": "Thank you for contacting us!"
+        },
+        "inputs": {
+          "name": {
+            "label": "Your name",
+            "placeholder": "Name"
+          },
+          "email": {
+            "label": "Your email",
+            "placeholder": "awesome@email.net"
+          },
+          "message": {
+            "label": "Write a message",
+            "placeholder": "Hello Henrique! How are you doing?"
+          }
+        },
+        "comands": {
+          "send": "Send",
+          "back": "Back"
+        }
+      }
+    }
+  },
+  "footer": {
+    "henridev": {
+      "title": "Software Developer",
+      "rights": "All rights reserved"
+    },
+    "columns": [
+      {
+        "title": "Find me on",
+        "links": [
+          {
+            "nome": "99Freelas",
+            "link": "https://www.99freelas.com.br/user/henriqueflorencio"
+          },
+          {
+            "nome": "UpWork",
+            "link": "https://www.upwork.com/freelancers/~01e80cd531d09b6b79"
+          }
+        ]
+      },
+      {
+        "title": "Services",
+        "links": [
+          {
+            "nome": "99Freelas",
+            "link": "https://www.99freelas.com.br/user/henriqueflorencio"
+          },
+          {
+            "nome": "UpWork",
+            "link": "https://www.upwork.com/freelancers/~01e80cd531d09b6b79"
+          }
+        ]
+      },
+      {
+        "title": "Map",
+        "links": [
+          {
+            "nome": "About Me",
+            "link": "#eu"
+          },
+          {
+            "nome": "Services",
+            "link": "#servicos"
+          },
+          {
+            "nome": "Projects",
+            "link": "#trabalhos"
+          },
+          {
+            "nome": "Testimonials",
+            "link": "#testemunhos"
+          },
+          {
+            "nome": "Work With Me",
+            "link": "#action"
+          }
+        ]
+      }
+    ]
+  }
+}

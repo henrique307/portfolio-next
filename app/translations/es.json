@@ -1,0 +1,291 @@
+{
+  "header": {
+    "sections": [
+      {
+        "nome": "Quién soy",
+        "link": "#eu"
+      },
+      {
+        "nome": "Servicios",
+        "link": "#servicos"
+      },
+      {
+        "nome": "Trabajos",
+        "link": "#trabalhos"
+      },
+      {
+        "nome": "Testimonios",
+        "link": "#testemunhos"
+      },
+      {
+        "nome": "Trabaja conmigo",
+        "link": "#action"
+      }
+    ]
+  },
+  "main": {
+    "intro": {
+      "greetings": "¡Hola, mi nombre es Henrique! Soy",
+      "typing_values": [
+        "Desarrollador Frontend.",
+        "Desarrollador Backend.",
+        "Desarrollador Fullstack.",
+        "Desarrollador de Chatbots.",
+        "Desarrollador de Software.",
+        "Desarrollador de Automatizaciones."
+      ],
+      "description": "¡Especialista en desarrollo web responsivo, automatizaciones, integraciones de pago, chatbots, APIs y dedicado a crear una solución creativa para tu necesidad tecnológica!",
+      "contact": "Contacto"
+    },
+    "experience": {
+      "header": {
+        "left_header": "Más de 4 años de experiencia en Desarrollo de Software escalable y adaptable",
+        "right_header": {
+          "main_header": "servicios",
+          "sub_header": "Descubre los mejores servicios que ofrezco, siempre enfocado en el éxito de tu proyecto."
+        }
+      },
+      "services": [
+        {
+          "header": "Front End",
+          "description": "¡Desarrollo de interfaces ligeras, elegantes y responsivas, utilizando las mejores herramientas del mercado!"
+        },
+        {
+          "header": "Back End",
+          "description": "¡APIs REST escalables y optimizadas, con documentación en Swagger y validación de datos!"
+        },
+        {
+          "header": "Herramientas",
+          "description": "¡Experiencia con las herramientas más utilizadas del mercado: Docker, Git, Swagger, Github, Bitbucket, Heroku, Vercel y mucho más!"
+        }
+      ]
+    },
+    "projects": {
+      "header": {
+        "sub_header": "Algunos de mis proyectos favoritos",
+        "main_header": "proyectos & demos"
+      },
+      "projects": {
+        "link_text": "ver proyecto",
+        "cards": [
+          {
+            "title": "Ecommerce Pastelería",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/bakery.png",
+            "description": "E-commerce integrado con la API de pagos de Stripe, el sitio web tiene como objetivo presentar al cliente con belleza y concisión sus productos y precios",
+            "link": "https://henrique307.github.io/bakery-website",
+            "github": "https://github.com/henrique307/bakery-website"
+          },
+          {
+            "title": "Landing Page Viajes",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/hevor.png",
+            "description": "Sitio para agencia de viajes, el sitio posee diseño responsivo y fue elaborado buscando la mejor experiencia posible del usuario",
+            "link": "https://henrique307.github.io/travels-website",
+            "github": "https://github.com/henrique307/travels-website"
+          },
+          {
+            "title": "Aplicación de viajes | Draftbit",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/triplt.png",
+            "description": "Aplicación para una agencia de viajes hecha usando la herramienta Draftbit basada en una plantilla, la aplicación utiliza React Native en el código.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/aplicativo+de+viagens.mp4",
+            "github": ""
+          },
+          {
+            "title": "Aplicación de bienes raíces | Draftbit",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/Stay.png",
+            "description": "Aplicación de búsqueda de bienes raíces hecha usando la herramienta Draftbit basada en una plantilla, la aplicación utiliza React Native en el código.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/aplicativo+de+imoveis.mp4",
+            "github": ""
+          },
+          {
+            "title": "API integrada a Google Sheets",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/api.png",
+            "description": "API integrada con Google Sheets, que ejecuta todas las operaciones CRUD necesarias para hacer integración con una aplicación de tu elección",
+            "link": "http://54.219.136.176:8080/api/swagger",
+            "github": "https://github.com/henrique307/api-sheets"
+          },
+          {
+            "title": "REST API Tienda de Mascotas",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/petshop_api.png",
+            "description": "API REST construida con NestJS (un framework que facilita la creación de APIs Express de forma rápida y organizada) con autenticación JWT usando MongoDB como base de datos",
+            "link": "http://54.219.136.176:3000/api/swagger",
+            "github": "https://github.com/henrique307/petshop-api"
+          },
+          {
+            "title": "Auth0 Aplicación Fullstack Multitenant",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/auth0.png",
+            "description": "Aplicación fullstack con inicio de sesión multitenant usando Auth0. La aplicación permite la participación en varios equipos a través de un sistema de inicio de sesión multitenant.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_cliente_auth0-multitenant.mp4",
+            "github": ""
+          },
+          {
+            "title": "Creación de cobros automáticos | Asaas + Bitrix24",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/bitrix+%2B+asaas.png",
+            "description": "Integración entre las plataformas Asaas y Bitrix24 que crea cobros automáticamente cuando se crea una tarjeta, ejecutando todo el proceso de cobro hasta la solicitud de factura de forma automática.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/integra%C3%A7%C3%A3o+bitrix-assas.mp4",
+            "github": ""
+          },
+          {
+            "title": "Chatbot conversacional | OpenAI API + Telegram",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/openai-logo_1.png",
+            "description": "Chatbot conversacional que actúa como Carlos, un profesor de una gran universidad. El bot se comunica utilizando un lenguaje formal y culto según configurado, y utiliza Telegram como plataforma.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/chatbot-conversacional-carlos-telegram-novitaai.mp4",
+            "github": "https://github.com/henrique307/Novita-ai-demo/"
+          },
+          {
+            "title": "Generador de Imágenes IA | API de Freepik",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/freepik.png",
+            "description": "Chatbot generador de imágenes IA usando la API de Freepik o NovitaAI. El chatbot incluye una función de suscripción con integración de pago usando la API de Mercado Pago.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_bot_IA-imagens_telegram.mp4",
+            "github": ""
+          },
+          {
+            "title": "Integración Ifood x Shipday",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/ifood.png",
+            "description": "Integración entre las plataformas Ifood y Shipday usando un webhook para conectar ambas aplicaciones a través de sus respectivas APIs.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_ifood-shipday.mp4",
+            "github": ""
+          },
+          {
+            "title": "Typescript Selenium | Web Scraper",
+            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/selnode.png",
+            "description": "Web scraper usando Selenium WebDriver y TypeScript. La aplicación busca información sobre productos en Mercado Libre a través de una llamada API que inicia la búsqueda. Los filtros se pueden configurar en el cuerpo de la solicitud.",
+            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/webscrapper+selenium+typescript.mp4"
+          }
+        ]
+      }
+    },
+    "testimonials": {
+      "header": {
+        "main_header": "valoraciones",
+        "sub_header": "Lo que dicen sobre mis servicios 👀"
+      },
+      "testimonials": [
+        {
+          "name": "Mario",
+          "title": "Cliente Workana",
+          "profile": "",
+          "evaluation": "[...] Cumplió con todas las especificaciones solicitadas, pero también aportó ideas innovadoras para mejoras, lo que demuestra su compromiso con la excelencia y su proactividad. Además, la entrega se hizo de manera rápida. ¡Felicitaciones por el trabajo ejemplar y la dedicación! ¡Lo recomiendo a todos!"
+        },
+        {
+          "name": "Alisson J.",
+          "title": "Cliente 99Freelas",
+          "profile": "",
+          "evaluation": "¡Excelente profesional! Demostró una comprensión profunda de nuestro proyecto y, además de ejecutarlo con agilidad, ofreció valiosas sugerencias de mejora, garantizando que el resultado fuera el más adecuado posible."
+        },
+        {
+          "name": "Kaique B.",
+          "title": "Cliente de 99Freelas",
+          "profile": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/cliente-profiles/kaique-barreto.jpg",
+          "evaluation": "¡Muy competente! ¡Excelente trabajo!"
+        }
+      ]
+    },
+    "action": {
+      "header": "🌍 ¡Vamos a dominar el mundo! 🚀",
+      "main": "¡Empieza ahora a desarrollar la solución que necesitas para que tu negocio alcance un nuevo nivel!",
+      "action": "¡Habla conmigo!",
+      "form": {
+        "failure": {
+          "sending_error": {
+            "header": "Hubo un error al enviar tu mensaje",
+            "main": "¡Por favor, intenta nuevamente o contáctame a través de mis redes sociales al final de la página!"
+          },
+          "input_error": {
+            "name": {
+              "required": "Este campo es obligatorio"
+            },
+            "email": {
+              "required": "Este campo es obligatorio",
+              "invalid": "Email inválido"
+            },
+            "message": {
+              "required": "No seas tímido 😊",
+              "max_lenght": "Mucho texto 👀"
+            }
+          }
+        },
+        "success": {
+          "header": "¡Mensaje enviado con éxito!",
+          "main": "¡Gracias por tu contacto!"
+        },
+        "inputs": {
+          "name": {
+            "label": "Tu nombre",
+            "placeholder": "Nombre"
+          },
+          "email": {
+            "label": "Tu email",
+            "placeholder": "awesome@email.net"
+          },
+          "message": {
+            "label": "Escribe un mensaje",
+            "placeholder": "¡Hola Henrique! ¿Cómo estás?"
+          }
+        },
+        "comands": {
+          "send": "Enviar",
+          "back": "Volver"
+        }
+      }
+    }
+  },
+  "footer": {
+    "henridev": {
+      "title": "Desarrollador de software",
+      "rights": "Todos los derechos reservados"
+    },
+    "columns": [
+      {
+        "title": "Encuéntrame en",
+        "links": [
+          {
+            "nome": "99Freelas",
+            "link": "https://www.99freelas.com.br/user/henriqueflorencio"
+          },
+          {
+            "nome": "UpWork",
+            "link": "https://www.upwork.com/freelancers/~01e80cd531d09b6b79"
+          }
+        ]
+      },
+      {
+        "title": "Servicios",
+        "links": [
+          {
+            "nome": "99Freelas",
+            "link": "https://www.99freelas.com.br/user/henriqueflorencio"
+          },
+          {
+            "nome": "UpWork",
+            "link": "https://www.upwork.com/freelancers/~01e80cd531d09b6b79"
+          }
+        ]
+      },
+      {
+        "title": "Mapa",
+        "links": [
+          {
+            "nome": "Quién soy",
+            "link": "#eu"
+          },
+          {
+            "nome": "Servicios",
+            "link": "#servicos"
+          },
+          {
+            "nome": "Trabajos",
+            "link": "#trabalhos"
+          },
+          {
+            "nome": "Testimonios",
+            "link": "#testemunhos"
+          },
+          {
+            "nome": "Trabaja conmigo",
+            "link": "#action"
+          }
+        ]
+      }
+    ]
+  }
+}
