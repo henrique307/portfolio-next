@@ -15,15 +15,15 @@ export function HeaderComponent() {
 
   const langs = [
     {
-      url: idiomas["espanha"]?.thumbnailLink,
+      url: "images/languages/espanha.png",
       name: "es",
     },
     {
-      url: idiomas["reino-unido"]?.thumbnailLink,
+      url: "images/languages/reino-unido.png",
       name: "en",
     },
     {
-      url: idiomas["brasil"]?.thumbnailLink,
+      url: "images/languages/brasil.png",
       name: "pt",
     },
   ];
