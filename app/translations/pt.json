@@ -70,14 +70,14 @@
         "cards": [
           {
             "title": "Ecommerce Confeitaria",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/bakery.png",
+            "thumbnail": "images/projects/cakes&sweets.png",
             "description": "E-comerce integrado com a API de pagamentos do Stripe, website tem o objetivo de apresentar ao cliente com beleza e concisão seus produtos e preços",
             "link": "https://henrique307.github.io/bakery-website",
             "github": "https://github.com/henrique307/bakery-website"
           },
           {
             "title": "Landing Page Viagens",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/hevor.png",
+            "thumbnail": "images/projects/hevor.png",
             "description": "Site para agencia de viagens, site possui design responsivo e foi elaborado visando a melhor experiencia possível do usuário",
             "link": "https://henrique307.github.io/travels-website",
             "github": "https://github.com/henrique307/travels-website"
@@ -86,70 +86,43 @@
             "title": "Aplicativo de viagens | Draftbit",
             "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/triplt.png",
             "description": "Aplicativo para agência de viagens feito usando a ferramenta Draftbit baseado em um template, aplicativo utiliza React Native no código.",
-            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/aplicativo+de+viagens.mp4",
+            "link": "https://youtu.be/UvMtE56D_j8",
             "github": ""
           },
           {
             "title": "Aplicativo de imóveis | Draftbit",
             "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/Stay.png",
             "description": "Aplicativo de busca de imóveis feito usando a ferramenta Draftbit baseado em um template, aplicativo utiliza React Native no código",
-            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/aplicativo+de+imoveis.mp4",
+            "link": "https://youtu.be/j6wQbvkp92w",
             "github": ""
           },
           {
             "title": "API integrada ao Google Sheets",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/api.png",
+            "thumbnail": "images/projects/sheets-api.png",
             "description": "API integrada com o google sheets, que executa todas as operações CRUD necessárias para fazer integração com uma aplicação de sua escolha! ",
-            "link": "http://54.219.136.176:8080/api/swagger",
+            "link": "https://api-sheets.onrender.com/api/swagger",
             "github": "https://github.com/henrique307/api-sheets"
           },
           {
             "title": "REST API Petshop",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/petshop_api.png",
+            "thumbnail": "images/projects/petshop-api.png",
             "description": "API REST construida com NestJS (Framework que facilita a criação de API's Express de forma rápida e organizada) com atenticação JWT usando MongoDB como base de dados",
-            "link": "http://54.219.136.176:3000/api/swagger",
+            "link": "https://petshop-api-3kbr.onrender.com/api/swagger",
             "github": "https://github.com/henrique307/petshop-api"
           },
           {
-            "title": "Auth0 Multitenant Fullstack App",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/auth0.png",
-            "description": "Aplicação fullstack de login multitenant usando auth0, aplicação possibilita a participação em diversas equipes diferentes através de um sistema de login multitenant",
-            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_cliente_auth0-multitenant.mp4",
-            "github": ""
-          },
-          {
-            "title": "Criação de cobranças automáticas | Asaas + Bitrix24",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/bitrix+%2B+asaas.png",
-            "description": "Integração entre as plataformas Asaas e Bitrix24 que cria cobranças automáticamente assim que um card for criado, executando todo o processo de cobrança até requisição de nota fiscal de forma automática.",
-            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/integra%C3%A7%C3%A3o+bitrix-assas.mp4",
-            "github": ""
-          },
-          {
-            "title": "Chatbot conversacional | OpenAI API + Telegram",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/openai-logo_1.png",
-            "description": "Chatbot conversacional que age como Carlos, um professor de uma grande universidade - bot se comunica utilizando linguagem rebuscada e formal conforme configurado, e utiliza o telegram como plataforma",
-            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/chatbot-conversacional-carlos-telegram-novitaai.mp4",
-            "github": "https://github.com/henrique307/Novita-ai-demo/"
+            "title": "Bot de vendas de produtos | API Mercado Pago + Telegram",
+            "thumbnail": "",
+            "description": "Bot de vendas integrado com a API do Mercado Pago que permite a venda de produtos através do Telegram, bot gera links de pagamento e envia para o cliente o produto após o pagamento, identificando o pagamento automaticamente e finalizando a venda",
+            "link": "https://youtu.be/YpWKdzJZcqQ",
+            "github": "https://github.com/henrique307/telegram-sales-template"
           },
           {
             "title": "AI images generator | Freepik API",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/freepik.png",
+            "thumbnail": "",
             "description": "Chatbot Gerador de imagens por IA usando a API do Freepik ou do NovitaAI, chatbot possui mensalidade embutida com pagamento usando a API do mercado pago",
-            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_bot_IA-imagens_telegram.mp4",
+            "link": "https://youtu.be/e8CQXcSYPlo",
             "github": ""
-          },
-          {
-            "title": "Integração | Ifood + Shipday",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/ifood.png",
-            "description": "Integração entre as plataformas Ifood e Shipday usando um webhook como ponte para conectar ambas as aplicações através de suas respectivas APIs",
-            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_ifood-shipday.mp4",
-            "github": ""
-          },
-          {
-            "title": "Typescript Selenium | Webscrapper",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/selnode.png",
-            "description": "Webscrapper com Selenium webdriver e Typescript, aplicação busca informações sobre produtos no mercado livre através de uma chamada da API que inicia a pesquisa, filtros podem ser definidos no body da requisição",
-            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/webscrapper+selenium+typescript.mp4"
           }
         ]
       }
@@ -175,7 +148,7 @@
         {
           "name": "Kaique B.",
           "title": "Cliente 99Freelas",
-          "profile": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/cliente-profiles/kaique-barreto.jpg",
+          "profile": "",
           "evaluation": "Muito competente! Excelente trabalho!"
         }
       ]

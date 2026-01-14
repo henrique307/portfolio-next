@@ -70,14 +70,14 @@
         "cards": [
           {
             "title": "Ecommerce Pastelería",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/bakery.png",
+            "thumbnail": "images/projects/cakes&sweets.png",
             "description": "E-commerce integrado con la API de pagos de Stripe, el sitio web tiene como objetivo presentar al cliente con belleza y concisión sus productos y precios",
             "link": "https://henrique307.github.io/bakery-website",
             "github": "https://github.com/henrique307/bakery-website"
           },
           {
             "title": "Landing Page Viajes",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/hevor.png",
+            "thumbnail": "images/projects/hevor.png",
             "description": "Sitio para agencia de viajes, el sitio posee diseño responsivo y fue elaborado buscando la mejor experiencia posible del usuario",
             "link": "https://henrique307.github.io/travels-website",
             "github": "https://github.com/henrique307/travels-website"
@@ -98,7 +98,7 @@
           },
           {
             "title": "API integrada a Google Sheets",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/api.png",
+            "thumbnail": "images/projects/sheets-api.png",
             "description": "API integrada con Google Sheets, que ejecuta todas las operaciones CRUD necesarias para hacer integración con una aplicación de tu elección",
             "link": "http://54.219.136.176:8080/api/swagger",
             "github": "https://github.com/henrique307/api-sheets"
@@ -111,18 +111,18 @@
             "github": "https://github.com/henrique307/petshop-api"
           },
           {
-            "title": "Auth0 Aplicación Fullstack Multitenant",
-            "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/auth0.png",
-            "description": "Aplicación fullstack con inicio de sesión multitenant usando Auth0. La aplicación permite la participación en varios equipos a través de un sistema de inicio de sesión multitenant.",
-            "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/demo_cliente_auth0-multitenant.mp4",
-            "github": ""
-          },
-          {
             "title": "Creación de cobros automáticos | Asaas + Bitrix24",
             "thumbnail": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/bitrix+%2B+asaas.png",
             "description": "Integración entre las plataformas Asaas y Bitrix24 que crea cobros automáticamente cuando se crea una tarjeta, ejecutando todo el proceso de cobro hasta la solicitud de factura de forma automática.",
             "link": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/projetos/integra%C3%A7%C3%A3o+bitrix-assas.mp4",
             "github": ""
+          },
+          {
+            "title": "Bot de venta de productos | API Mercado Pago + Telegram",
+            "thumbnail": "",
+            "description": "Bot de ventas integrado con la API de Mercado Pago que permite vender productos a través de Telegram. El bot genera enlaces de pago y envía el producto al cliente después del pago, identificando el pago automáticamente y finalizando la venta.",
+            "link": "https://youtu.be/j6wQbvkp92w",
+            "github": "https://github.com/henrique307/telegram-sales-template"
           },
           {
             "title": "Chatbot conversacional | OpenAI API + Telegram",
@@ -175,7 +175,7 @@
         {
           "name": "Kaique B.",
           "title": "Cliente de 99Freelas",
-          "profile": "https://imagens-portfolio.s3.sa-east-1.amazonaws.com/cliente-profiles/kaique-barreto.jpg",
+          "profile": "",
           "evaluation": "¡Muy competente! ¡Excelente trabajo!"
         }
       ]
