@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import { z } from "zod";
@@ -6,9 +6,11 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import "./action.css";
 import { useTranslation } from "react-i18next";
 import { useForm } from "react-hook-form";
+import { showAlert } from "@/app/utils/showAlert";
 
 export function CallToAction() {
   const [form, setForm] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState<boolean | undefined>(
     undefined
   );
@@ -78,11 +80,9 @@ export function CallToAction() {
   }
 
   const zodSchema = z.object({
-    nome: z
-      .string()
-      .min(1, {
-        message: actionTranslation.form.failure.input_error.name.required,
-      }),
+    nome: z.string().min(1, {
+      message: actionTranslation.form.failure.input_error.name.required,
+    }),
     email: z
       .string()
       .min(1, {
@@ -105,35 +105,49 @@ export function CallToAction() {
     register,
     handleSubmit,
     formState: { errors },
-    setError,
   } = useForm<MessageInterface>({
     resolver: zodResolver(zodSchema),
     mode: "onBlur",
   });
 
-  async function sendMessage(data: MessageInterface) {
-    return await fetch("https://api-sheets.onrender.com/telegram", {
+  async function sendContactForm(data: {
+    nome: string;
+    email: string;
+    mensagem: string;
+  }) {
+    const res = await fetch("/api/mail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ ...data, telefone: "21 98888-8888" }),
-    })
-      .then((res) => {
-        if (!res.ok) {
-          return false;
-        }
-        return true;
-      })
-      .catch((e) => {
-        return false;
-      });
+      body: JSON.stringify(data),
+    });
+
+    return res;
   }
 
   async function onSubmit(data: MessageInterface) {
-    const response = await sendMessage(data);
+    try {
+      setIsLoading(true);
 
-    setErrorMessage(response);
+      await sendContactForm(data);
+
+      showAlert({
+        title: "Mensagem enviada!",
+        message: "Mensagem enviada com sucesso!",
+        status: "success",
+      });
+      
+    } catch (e: any) {
+      console.error(e);
+      showAlert({
+        title: "Erro!",
+        message: "Houve um erro enviando a mensagem!",
+        status: "error",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   }
 
   return (
@@ -166,9 +180,12 @@ export function CallToAction() {
                 </p>
               </div>
             )}
-            <div className="card bg-base-200 p-5 pt-0 shrink-0 w-full max-w-md shadow-2xl">
-              <form className="card-body" onSubmit={handleSubmit(onSubmit)}>
-                <div className="form-control">
+            <div className="card bg-base-200 p-5 pt-0 shrink-0 w-full shadow-2xl">
+              <form
+                className="card-body gap-4"
+                onSubmit={handleSubmit(onSubmit)}
+              >
+                <div className="flex flex-col form-control">
                   <label className="label">
                     <span
                       className={`label-text ${errors.nome && "text-error"}`}
@@ -182,10 +199,10 @@ export function CallToAction() {
                     {...register("nome")}
                     type="text"
                     placeholder={actionTranslation.form.inputs.name.placeholder}
-                    className="input input-bordered rounded-none"
+                    className="input input-bordered rounded-none w-full text-base-content"
                   />
                 </div>
-                <div className="form-control">
+                <div className="flex flex-col form-control">
                   <label className="label">
                     <span
                       className={`label-text ${errors.email && "text-error"}`}
@@ -201,10 +218,10 @@ export function CallToAction() {
                     placeholder={
                       actionTranslation.form.inputs.email.placeholder
                     }
-                    className="input input-bordered rounded-none"
+                    className="input input-bordered rounded-none w-full text-base-content"
                   />
                 </div>
-                <div className="form-control">
+                <div className="flex flex-col form-control">
                   <label className="label">
                     <span
                       className={`label-text ${
@@ -221,11 +238,17 @@ export function CallToAction() {
                     placeholder={
                       actionTranslation.form.inputs.message.placeholder
                     }
-                    className="py-2 h-32 input input-bordered rounded-none"
+                    className="py-2 h-32 input input-bordered rounded-none w-full text-base-content"
                   />
                 </div>
-                <div className="form-control mt-6">
-                  <button className="btn btn-primary rounded-none">
+                <div className="flex justify-end form-control">
+                  <button
+                    className={`btn btn-primary rounded-none`}
+                    disabled={isLoading}
+                  >
+                    {isLoading && (
+                      <span className="loading loading-spinner"></span>
+                    )}
                     {actionTranslation.form.comands.send}
                   </button>
                 </div>
@@ -249,7 +272,7 @@ export function CallToAction() {
             </p>
             <button
               onClick={toggle}
-              className="btn btn-primary btn-sm md:btn-md mt-3 px-8 btn-outline rounded-none"
+              className={`btn btn-primary btn-sm md:btn-md mt-3 px-8 btn-outline rounded-none`}
             >
               {actionTranslation.action}
             </button>
