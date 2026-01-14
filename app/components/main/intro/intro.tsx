@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { DownloadIcon } from "../../../utils/icons/icons";
 import { ReactTyped } from "react-typed";
@@ -16,11 +16,16 @@ export function Intro() {
   }
 
   const { t, i18n } = useTranslation("global");
-  const { data } = useDriveContent("curriculos")
+  const { data } = useDriveContent("curriculos");
   const curriculos = transformDriveFiles(data);
-  const introTranslation = t("main.intro", { returnObjects: true }) as introTranslation;
+  const introTranslation = t("main.intro", {
+    returnObjects: true,
+  }) as introTranslation;
 
-  const curriculo = i18n.language === "pt" ? curriculos["curriculo-br"]?.webContentLink : curriculos["curriculo-en"]?.webContentLink;
+  const curriculo =
+    i18n.language === "pt"
+      ? curriculos["curriculo-br"]?.webContentLink
+      : curriculos["curriculo-en"]?.webContentLink;
 
   return (
     <div
@@ -59,9 +64,16 @@ export function Intro() {
             <a
               target="_blank"
               href={curriculo}
-              className="btn text-clamp_text btn-sm md:btn-md lg:btn-lg btn-slate-200 btn-outline rounded-none"
+              className={`btn text-clamp_text btn-sm md:btn-md lg:btn-lg btn-slate-200 btn-outline rounded-none ${
+                !curriculo && "btn-disabled"
+              }`}
             >
-              <DownloadIcon /> Download CV
+              {curriculo ? (
+                <DownloadIcon />
+              ) : (
+                <span className="loading loading-spinner"></span>
+              )}
+              Download CV
             </a>
           </div>
         </div>
