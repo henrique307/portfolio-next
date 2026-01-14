@@ -9,7 +9,7 @@ export interface Project {
   icons?: ((props: TechIconInterface) => JSX.Element)[];
 }
 
-export const trabalhoIcons = [
+export const projectIcons = [
   {
     icons: [
       icons.IconReact,
@@ -53,6 +53,9 @@ export const trabalhoIcons = [
       icons.IconNode,
       icons.IconTypescript,
     ],
+  },
+  {
+    icons: [icons.IconNode, icons.IconTypescript, icons.IconAPI],
   },
   {
     icons: [icons.IconNode, icons.IconTypescript, icons.IconAPI],
