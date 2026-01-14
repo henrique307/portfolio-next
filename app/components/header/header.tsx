@@ -28,8 +28,6 @@ export function HeaderComponent() {
     },
   ];
 
-  console.log(idiomas)
-
   function handleLanguageChange(lang: string) {
     i18n.changeLanguage(lang);
   }

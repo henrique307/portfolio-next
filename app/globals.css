@@ -11,8 +11,6 @@
   themes: light --default, forest --prefersdark;
 }
 
-;
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
