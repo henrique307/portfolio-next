@@ -25,7 +25,7 @@ export function Projects() {
     returnObjects: true,
   }) as ProjectsTranslations;
 
-  for (let project in projectsTranslations.projects.cards) {
+  for (const project in projectsTranslations.projects.cards) {
     const projects = projectsTranslations.projects.cards;
     const projectIndex = projects.indexOf(projects[project]);
 

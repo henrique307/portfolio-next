@@ -2,7 +2,6 @@ import React, { SVGProps } from "react";
 
 export interface IconInterface {
   className?: string;
-  onClick?: Function
 }
 
 export function DownloadIcon(props: IconInterface) {

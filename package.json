@@ -6,21 +6,21 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint",
-    "deploy": "netlify deploy --prod"
+    "start": "serve dist",
+    "lint": "eslint"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.6.0",
+    "@opennextjs/cloudflare": "^1.14.8",
     "@splidejs/react-splide": "^0.7.12",
     "@tanstack/react-query": "^5.90.16",
-    "dotenv": "^16.4.5",
+    "dotenv": "^15.0.0",
     "googleapis": "^169.0.0",
     "i18next": "^23.11.5",
-    "next": "16.1.1",
+    "next": "^15.5.9",
     "nodemailer": "^7.0.12",
-    "react": "19.2.3",
-    "react-dom": "19.2.3",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "react-hook-form": "^7.51.5",
     "react-i18next": "^14.1.2",
     "react-lazy-load-image-component": "^1.6.0",

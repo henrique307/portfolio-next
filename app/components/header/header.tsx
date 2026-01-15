@@ -4,13 +4,9 @@ import "./header.css";
 import { Logo } from "../../utils/logo";
 import { Settings, Themes } from "../../utils/icons/icons";
 import { useTranslation } from "react-i18next";
-import { useDriveContent } from "@/app/providers/drive-content/drive.provider";
-import { transformDriveFiles } from "@/app/utils/transformDriveFiles";
 
 export function HeaderComponent() {
   const { t, i18n } = useTranslation("global");
-  const { data } = useDriveContent("idiomas")
-  const idiomas = transformDriveFiles(data);
   const navItems = t("header.sections", { returnObjects: true }) as NavItem[];
 
   const langs = [

@@ -138,7 +138,7 @@ export function CallToAction() {
         status: "success",
       });
       
-    } catch (e: any) {
+    } catch (e: unknown) {
       console.error(e);
       showAlert({
         title: "Erro!",
