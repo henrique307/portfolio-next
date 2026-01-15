@@ -1,3 +1,4 @@
+import { ReactElement } from "react";
 import { TechIconInterface, icons } from "../../../../utils/icons/tech-icons";
 
 export interface Project {
@@ -6,7 +7,7 @@ export interface Project {
   thumbnail: string;
   link: string;
   github: string;
-  icons?: ((props: TechIconInterface) => JSX.Element)[];
+  icons?: ((props: TechIconInterface) => ReactElement)[];
 }
 
 export const projectIcons = [
