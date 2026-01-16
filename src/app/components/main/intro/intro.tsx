@@ -34,10 +34,10 @@ export function Intro() {
     >
       <div className="items-start w-[98%] relative">
         <div className="text-left">
-          <h1 className="text-clamp_subtitle font-bold text-primary">
+          <h1 className="text-clamp-subtitle font-bold text-primary">
             {introTranslation.greetings}{" "}
           </h1>
-          <div className="-translate-x-1 md:-translate-x-2 bg-gradient-to-r from-primary to-indigo-500 bg-clip-text text-transparent font-mono flex sm:flex-row w-fit text-clamp_title font-bold">
+          <div className="-translate-x-1 md:-translate-x-2 bg-gradient-to-r from-primary to-indigo-500 bg-clip-text text-transparent font-mono flex sm:flex-row w-fit text-clamp-title font-bold">
             |
             <ReactTyped
               strings={introTranslation.typing_values}
@@ -51,7 +51,7 @@ export function Intro() {
               <p className="w-fit border-r border-base-content typing"></p>
             </ReactTyped>
           </div>
-          <p className="text-clamp_text opacity-75 pb-4 pt-2 max-w-lg lg:max-w-3xl text-base-content">
+          <p className="text-clamp-text opacity-75 pb-4 pt-2 max-w-lg lg:max-w-3xl text-base-content">
             {introTranslation.description}
           </p>
           <div className="flex gap-4 text-base-content">
@@ -64,7 +64,7 @@ export function Intro() {
             <a
               target="_blank"
               href={curriculo}
-              className={`btn text-clamp_text btn-sm md:btn-md lg:btn-lg btn-slate-200 btn-outline rounded-none ${
+              className={`btn text-clamp-text btn-sm md:btn-md lg:btn-lg btn-slate-200 btn-outline rounded-none ${
                 !curriculo && "btn-disabled"
               }`}
             >

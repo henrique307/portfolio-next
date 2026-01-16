@@ -163,10 +163,10 @@ export function CallToAction() {
               ""
             ) : !errorMessage ? (
               <div className="bg-error max-w-2xl text-center text-red-900 rounded-md  px-6 py-3">
-                <h1 className="text-clamp_title text-red-900 px-6 py-3 bold">
+                <h1 className="text-clamp-title text-red-900 px-6 py-3 bold">
                   {actionTranslation.form.failure.sending_error.header}
                 </h1>
-                <p className="text-clamp_subtitle">
+                <p className="text-clamp-subtitle">
                   {actionTranslation.form.failure.sending_error.main}
                 </p>
               </div>
@@ -264,10 +264,10 @@ export function CallToAction() {
           className={`hero-content text-center text-neutral-content transition-opacity duration-500`}
         >
           <div className="max-w-3xl py-10">
-            <h1 className="mb-5 text-clamp_title font-bold tracking-wider">
+            <h1 className="mb-5 text-clamp-title font-bold tracking-wider">
               {actionTranslation.header}
             </h1>
-            <p className="mb-5 my-8 opacity-75 text-clamp_subtitle px-2 leading-relaxed">
+            <p className="mb-5 my-8 opacity-75 text-clamp-subtitle px-2 leading-relaxed">
               {actionTranslation.main}
             </p>
             <button

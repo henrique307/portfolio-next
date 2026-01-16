@@ -49,10 +49,10 @@ export function Projects() {
       <div className="text-left flex flex-col items-center mx-auto w-[90%]">
         <div className="flex justify-between w-[90%] items-end">
           <div className="text-center sm:text-left mx-auto sm:m-0">
-            <h1 className="text-accent uppercase text-clamp_text tracking-widest font-mono">
+            <h1 className="text-accent uppercase text-clamp-text tracking-widest font-mono">
               --- {projectsTranslations.header.main_header}
             </h1>
-            <h2 className="text-clamp_subtitle">
+            <h2 className="text-clamp-subtitle">
               {projectsTranslations.header.sub_header}
             </h2>
           </div>
@@ -107,13 +107,13 @@ export function Projects() {
                     )}
                   </div>
                   <div className="bottom-0 w-full p-3 pt-0">
-                    <h1 className="text-clamp_subtitle cursor-default mt-5">
+                    <h1 className="text-clamp-subtitle cursor-default mt-5">
                       {project.title}
                     </h1>
                     
                     <article
                       style={scrollprops}
-                      className="text-clamp_text opacity-75 my-5 max-h-[120px] overflow-y-auto"
+                      className="text-clamp-text opacity-75 my-5 max-h-[120px] overflow-y-auto"
                     >
                       {project.description}
                     </article>

@@ -15,7 +15,7 @@ export function Logo({ displayVersion, hideBaseColorContent = false, ...props }:
       <span className={redTone}>H</span>ennri<span className={redTone}>D</span>
       ev
       {displayVersion && (
-        <span className="ml-1 opacity-50 text-clamp_subtext">
+        <span className="ml-1 opacity-50 text-clamp-subtext">
           {/* {__APP_VERSION__} */}
         </span>
       )}

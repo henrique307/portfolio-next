@@ -78,14 +78,14 @@ export function Experiencia() {
     >
       <div className="text-left flex flex-col items-center w-full md:w-[90%]">
         <div className="flex flex-col md:flex-row items-center w-full justify-between">
-          <h1 className="text-clamp_subtitle font-bold text-center md:w-2/4 md:text-left">
+          <h1 className="text-clamp-subtitle font-bold text-center md:w-2/4 md:text-left">
             {experienceTranslation.header.left_header}
           </h1>
           <div className="w-full mt-5 md:mt-0 md:w-1/3">
-            <h2 className="text-clamp_text text-center md:text-left text-accent uppercase tracking-widest font-mono">
+            <h2 className="text-clamp-text text-center md:text-left text-accent uppercase tracking-widest font-mono">
               {experienceTranslation.header.right_header.main_header}
             </h2>
-            <span className="block text-clamp_subtitle opacity-75 text-center md:text-left">
+            <span className="block text-clamp-subtitle opacity-75 text-center md:text-left">
               {experienceTranslation.header.right_header.sub_header}
             </span>
           </div>
@@ -98,10 +98,10 @@ export function Experiencia() {
                 key={`exp-${i}`}
               >
                 {servicos[i].icon("size-14 mb-3 mx-auto")}
-                <h1 className="text-clamp_title font-bold bg-gradient-to-t from-primary to-indigo-500 text-transparent bg-clip-text">
+                <h1 className="text-clamp-title font-bold bg-gradient-to-t from-primary to-indigo-500 text-transparent bg-clip-text">
                   {servico.header}
                 </h1>
-                <span className="text-clamp_text tracking-loose text-base-content inline-block mt-5">
+                <span className="text-clamp-text tracking-loose text-base-content inline-block mt-5">
                   {servico.description}
                 </span>
                 <div

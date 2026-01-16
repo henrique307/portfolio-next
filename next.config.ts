@@ -1,10 +1,12 @@
-// next.config.js
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  distDir: 'dist',
-  images: {
-    unoptimized: true, // Necessário para exportação estática
-  },
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+	/* config options here */
 };
 
-module.exports = nextConfig;
+export default nextConfig;
+
+// Enable calling `getCloudflareContext()` in `next dev`.
+// See https://opennext.js.org/cloudflare/bindings#local-access-to-bindings.
+import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
+initOpenNextCloudflareForDev();

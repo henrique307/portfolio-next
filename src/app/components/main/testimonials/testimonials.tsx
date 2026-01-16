@@ -44,10 +44,10 @@ export function Testimonials() {
     >
       <div className="items-start w-[90%]">
         <div className="w-full">
-          <span className="text-clamp_text uppercase tracking-widest font-mono block mb-2 text-accent w-full text-center">
+          <span className="text-clamp-text uppercase tracking-widest font-mono block mb-2 text-accent w-full text-center">
             {testimonialsTranslation.header.main_header}
           </span>
-          <h1 className="text-clamp_subtitle font-bold w-full text-center">
+          <h1 className="text-clamp-subtitle font-bold w-full text-center">
             {testimonialsTranslation.header.sub_header}
           </h1>
         </div>
@@ -56,7 +56,7 @@ export function Testimonials() {
             return (
               <SplideSlide key={i}>
                 <div className="h-72 py-12 w-full mx-auto max-w-[50rem] flex flex-col justify-around">
-                  <span className="text-clamp_text block text-base-content opacity-75 text-center">
+                  <span className="text-clamp-text block text-base-content opacity-75 text-center">
                     {testemunho.evaluation}
                   </span>
                   <div className="flex gap-3 items-center justify-center">
@@ -73,10 +73,10 @@ export function Testimonials() {
                       </div>
                     </div>
                     <div className="">
-                      <h1 className="text-clamp_text font-bold">
+                      <h1 className="text-clamp-text font-bold">
                         {testemunho.name}
                       </h1>
-                      <span className="text-clamp_subtext opacity-50">
+                      <span className="text-clamp-subtext opacity-50">
                         {testemunho.title}
                       </span>
                     </div>

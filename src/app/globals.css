@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @theme {
   --text-clamp_title: clamp(1.15rem, 2.5vw, 1.7rem);

@@ -27,13 +27,13 @@ export function FooterComponent() {
           <div className="flex flex-col h-full justify-between w-full">
             <aside className="flex flex-col gap-1">
               <div>
-                <Logo className="text-clamp_subtitle" displayVersion hideBaseColorContent/>
+                <Logo className="text-clamp-subtitle" displayVersion hideBaseColorContent/>
               </div>
-              <p className="text-clamp_text">
+              <p className="text-clamp-text">
                 {footerTranslation.henridev.title}
               </p>
-              <p className="text-clamp_text">henrique.florencio307@gmail.com</p>
-              <p className="text-clamp_text">
+              <p className="text-clamp-text">henrique.florencio307@gmail.com</p>
+              <p className="text-clamp-text">
                 Copyright © 2024 - {footerTranslation.henridev.rights}
               </p>
             </aside>
