@@ -4,8 +4,7 @@ import { DownloadIcon } from "../../../utils/icons/icons";
 import { ReactTyped } from "react-typed";
 import "./intro.css";
 import { useTranslation } from "react-i18next";
-import { useDriveContent } from "@/app/providers/drive-content/drive.provider";
-import { transformDriveFiles } from "@/app/utils/transformDriveFiles";
+import Link from "next/link";
 
 export function Intro() {
   interface introTranslation {
@@ -16,16 +15,14 @@ export function Intro() {
   }
 
   const { t, i18n } = useTranslation("global");
-  const { data } = useDriveContent("curriculos");
-  const curriculos = transformDriveFiles(data);
   const introTranslation = t("main.intro", {
     returnObjects: true,
   }) as introTranslation;
 
   const curriculo =
     i18n.language === "pt"
-      ? curriculos["curriculo-br"]?.webContentLink
-      : curriculos["curriculo-en"]?.webContentLink;
+      ? "/curriculos/curriculo-br.pdf"
+      : "/curriculos/curriculo-en.pdf";
 
   return (
     <div
@@ -57,14 +54,15 @@ export function Intro() {
           <div className="flex gap-4 text-base-content">
             <a
               href="#action"
-              className="btn btn-sm md:btn-md lg:btn-lg px-5 btn-primary rounded-none"
+              className="btn btn-sm px-5 btn-primary rounded-none"
             >
               {introTranslation.contact}
             </a>
-            <a
+            <Link
+              download
               target="_blank"
               href={curriculo}
-              className={`btn text-clamp-text btn-sm md:btn-md lg:btn-lg btn-slate-200 btn-outline rounded-none ${
+              className={`btn text-clamp-text btn-sm btn-slate-200 btn-outline rounded-none ${
                 !curriculo && "btn-disabled"
               }`}
             >
@@ -74,7 +72,7 @@ export function Intro() {
                 <span className="loading loading-spinner"></span>
               )}
               Download CV
-            </a>
+            </Link>
           </div>
         </div>
       </div>

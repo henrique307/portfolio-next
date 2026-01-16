@@ -20,7 +20,6 @@
     "@splidejs/react-splide": "^0.7.12",
     "@tanstack/react-query": "^5.90.16",
     "dotenv": "^15.0.0",
-    "googleapis": "^169.0.0",
     "i18next": "^23.11.5",
     "next": "15.5.9",
     "nodemailer": "^7.0.12",

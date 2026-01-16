@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   BackendIcon,
@@ -108,8 +108,8 @@ export function Experiencia() {
                   tabIndex={0}
                   className={`flex flex-col left-0 z-0 w-full h-full absolute translate-y-[70%] focus:translate-y-0 focus:bg-black focus:bottom-0 focus:opacity-90 transition`}
                 >
-                  <TopArrow className="mt-3 lg:mt-6 scale-[.7] mx-auto cursor-pointer opacity-70 animate-bounce focus:display-none" />
-                  <ul className="w-1/2 justify-center mt-10 lg:mt-12 mx-auto flex flex-wrap gap-5">
+                  <TopArrow className="mt-3 lg:mt-6 scale-[.7] mx-auto cursor-pointer opacity-70 animate-float focus:display-none" />
+                  <ul className="w-1/2 justify-center align-center mt-10 lg:mt-12 mx-auto flex flex-wrap gap-5">
                     {servicos[i].tecnologies.map((TechIcon, i) => {
                       return (
                         <li key={i}>
