@@ -40,11 +40,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className={`pb-32 pt-20 bg-base-100 w-full flex justify-center ${
-        !open
-          ? "max-h-[2400px] md:max-h-[1000px] xl:max-h-[800px]"
-          : "max-h-fit"
-      } overflow-hidden relative transition-all duration-1000 text-base-content`}
+      className={`pb-32 pt-20 bg-base-100 w-full flex justify-center max-h-fit overflow-hidden relative transition-all duration-1000 text-base-content`}
     >
       <div className="text-left flex flex-col items-center mx-auto w-[90%]">
         <div className="flex justify-between w-[90%] items-end">
@@ -110,7 +106,7 @@ export function Projects() {
                     <h1 className="text-clamp-subtitle cursor-default mt-5">
                       {project.title}
                     </h1>
-                    
+
                     <article
                       style={scrollprops}
                       className="text-clamp-text opacity-75 my-5 max-h-[120px] overflow-y-auto"
@@ -148,16 +144,7 @@ export function Projects() {
           })}
         </div>
       </div>
-      <div className="h-20 w-full absolute bottom-0 flex justify-center items-center bg-gradient-to-t from-base-300 from-40%">
-        <a href={!open ? `#projects` : undefined}>
-          <TopArrow
-            onClick={() => {
-              setOpen(!open);
-            }}
-            className={`${!open && "rotate-180"} cursor-pointer`}
-          />
-        </a>
-      </div>
+      <div className="h-20 w-full absolute bottom-0 flex justify-center items-center bg-gradient-to-t from-base-300 from-40%" />
     </section>
   );
 }
