@@ -9,10 +9,6 @@
   --text-clamp_subtext: clamp(0.75rem, 1vw, 0.8rem);
 }
 
-@plugin "daisyui" {
-  themes: light --default, forest --prefersdark;
-}
-
 :root {
   --background: #ffffff;
   --foreground: #171717;

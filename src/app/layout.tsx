@@ -10,7 +10,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className="scroll-smooth">
+    <html lang="pt-BR" className="scroll-smooth" data-theme="forest">
       <head>
         <meta charSet="UTF-8" />
         <link rel="icon" href="/hd.ico" sizes="16x16 32x32 48x48 192x192 512x512" type="image/x-icon" />
