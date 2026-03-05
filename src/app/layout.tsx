@@ -14,6 +14,7 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <link rel="icon" href="images/icons/hd.ico" sizes="16x16 32x32 48x48 192x192 512x512" type="image/x-icon" />
+        <link rel="canonical" href="https://hennridev.work" />
 
         {/* <!-- Open Graph Tags --> */}
         <meta property="og:type" content="website" />
