@@ -13,7 +13,7 @@ export default function RootLayout({
     <html lang="pt-BR" className="scroll-smooth" data-theme="forest">
       <head>
         <meta charSet="UTF-8" />
-        <link rel="icon" href="/hd.ico" sizes="16x16 32x32 48x48 192x192 512x512" type="image/x-icon" />
+        <link rel="icon" href="images/icons/hd.ico" sizes="16x16 32x32 48x48 192x192 512x512" type="image/x-icon" />
 
         {/* <!-- Open Graph Tags --> */}
         <meta property="og:type" content="website" />
@@ -21,7 +21,7 @@ export default function RootLayout({
         <meta property="og:site_name" content="Hennridev | Desenvolvimento de Software" />
         <meta property="og:title" content="HennriDev - Desenvolvimento Web & Automação" />
         <meta property="og:description" content="Criação de sistemas escaláveis, automação e integrações de API para seu negócio." />
-        <meta property="og:image" itemProp="image" content="https://hennridev.work/hd.ico" />
+        <meta property="og:image" itemProp="image" content="images/icons/hd.ico" />
 
         {/* <!-- TODO: imagem deve ser 1200x630 --> */}
         <meta property="og:image:alt" content="HennriDev - Desenvolvimento Web & Automação" />
@@ -32,9 +32,9 @@ export default function RootLayout({
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="HennriDev - Desenvolvimento Web & Automação" />
         <meta name="twitter:description" content="Desenvolvimento de software especializado em aplicações modernas e escaláveis." />
-        <meta name="twitter:url" content="https://hennridev.netlify.app" />
+        <meta name="twitter:url" content="https://hennridev.work" />
         <meta name="twitter:description" content="Henrique Florencio, Desenvolvedor de Software especializado em desenvolvimento web responsivo e escalável!" />
-        <meta name="twitter:image" content="https://hennridev.work/hd.ico" />
+        <meta name="twitter:image" content="images/icons/hd.ico" />
         <meta name="twitter:image:alt" content="HennriDev - Desenvolvimento Web & Automação" />
         {/* <!-- Fim Twitter Tags--> */}
 
@@ -63,7 +63,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: "HennriDev",
               url: "https://hennridev.work",
-              logo: "https://hennridev.work/hd.ico",
+              logo: "images/icons/hd.ico",
               description:
                 "Desenvolvimento de software especializado em aplicações modernas e escaláveis.",
               contactPoint: {
