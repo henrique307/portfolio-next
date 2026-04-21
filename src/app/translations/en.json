@@ -123,6 +123,13 @@
             "description": "AI image generator chatbot using the Freepik or NovitaAI API. The chatbot includes a monthly subscription with payments handled via the Mercado Pago API.",
             "link": "https://youtu.be/e8CQXcSYPlo",
             "github": ""
+          },
+          {
+            "title": "AI Excel Chatbot | Freepik API",
+            "thumbnail": "",
+            "description": "A chatbot designed to teach users useful Excel tricks and how to use its more advanced features.",
+            "link": "https://youtu.be/EkJIRz1mxVs",
+            "github": ""
           }
         ]
       }
