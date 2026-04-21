@@ -19,7 +19,6 @@ export function Projects() {
     };
   }
 
-  const [open, setOpen] = useState(false);
   const { t } = useTranslation("global");
   const projectsTranslations = t("main.projects", {
     returnObjects: true,
