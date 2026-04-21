@@ -14,8 +14,8 @@
         "link": "#trabalhos"
       },
       {
-        "nome": "Testemunhos",
-        "link": "#testemunhos"
+        "nome": "Avaliações",
+        "link": "#avaliações"
       },
       {
         "nome": "Trabalhe comigo",
@@ -118,7 +118,7 @@
             "github": ""
           },
           {
-            "title": "AI images generator | Freepik API",
+            "title": "Gerador de imagens com IA | Freepik API",
             "thumbnail": "",
             "description": "Chatbot Gerador de imagens por IA usando a API do Freepik ou do NovitaAI, chatbot possui mensalidade embutida com pagamento usando a API do mercado pago",
             "link": "https://youtu.be/e8CQXcSYPlo",
@@ -250,8 +250,8 @@
             "link": "#trabalhos"
           },
           {
-            "nome": "Testemunhos",
-            "link": "#testemunhos"
+            "nome": "Avaliações",
+            "link": "#avaliações"
           },
           {
             "nome": "Trabalhe comigo",

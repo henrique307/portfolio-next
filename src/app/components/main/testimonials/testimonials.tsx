@@ -38,7 +38,7 @@ export function Testimonials() {
 
   return (
     <div
-      id="testemunhos"
+      id="avaliações"
       className="py-32 px-2  bg-base-300 w-full flex justify-center text-base-content"
     >
       <div className="items-start w-[90%]">
