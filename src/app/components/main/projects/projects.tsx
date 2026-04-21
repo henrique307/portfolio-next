@@ -1,11 +1,11 @@
 "use client";
 
 import { icons } from "../../../utils/icons/tech-icons";
-import { NewWindowIcon, TopArrow } from "../../../utils/icons/icons";
+import { NewWindowIcon } from "../../../utils/icons/icons";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useTranslation } from "react-i18next";
 import { Project, projectIcons } from "./utils/content";
-import { CSSProperties, useState } from "react";
+import { CSSProperties } from "react";
 
 export function Projects() {
   interface ProjectsTranslations {

@@ -1,6 +1,5 @@
 "use client"
 
-import "./testimonials.css";
 import { Options, Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/css/skyblue";
 import { NextArrow } from "../../../utils/icons/icons";
