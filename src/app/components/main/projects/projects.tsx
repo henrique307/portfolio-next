@@ -38,7 +38,7 @@ export function Projects() {
 
   return (
     <section
-      id="projects"
+      id="trabalhos"
       className={`pb-32 pt-20 bg-base-100 w-full flex justify-center max-h-fit overflow-hidden relative transition-all duration-1000 text-base-content`}
     >
       <div className="text-left flex flex-col items-center mx-auto w-[90%]">
