@@ -64,32 +64,32 @@ export function HeaderComponent() {
                 })}
               </ul>
             </div>
-            <ul className="menu menu-horizontal flex-nowrap rounded-box">
+            <ul className="menu menu-horizontal menu-lg flex-nowrap rounded-box">
               <Themes className="w-1/3 mx-auto aspect-square" />
-              <li>
-                <details>
-                  <ul>
+              <li className="w-9 h-9">
+                <details className="my-auto">
+                  <ul className="gap-2 flex flex-col">
                     {langs.map((lang, i) => {
                       if (lang.name === i18n.language) return;
                       return (
                         <li key={i}>
                           <a
                             href={`/${lang.name}`}
-                            className="uppercase flex justify-center"
+                            className="p-0"
                           >
                             <Image
                               width={24}
                               height={24}
                               src={lang.url as string}
                               alt={lang.name}
-                              className="rounded-full w-5"
+                              className="rounded-full mx-auto max-h-8 max-w-8"
                             />
                           </a>
                         </li>
                       );
                     })}
                   </ul>
-                  <summary className="btn cursor-pointer after:content-none p-0">
+                  <summary className="btn cursor-pointer after:content-none h-fit min-h-fit p-0">
                     {langs.map(
                       (lang, i) =>
                         i18n.language === lang.name && (
