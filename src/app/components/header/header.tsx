@@ -11,9 +11,9 @@ export function HeaderComponent() {
   const navItems = t("header.sections", { returnObjects: true }) as NavItem[];
 
   const langs = [
-    { url: "images/languages/espanha.png", name: "es" },
-    { url: "images/languages/reino-unido.png", name: "en" },
-    { url: "images/languages/brasil.png", name: "pt" },
+    { url: "/images/languages/espanha.png", name: "es" },
+    { url: "/images/languages/reino-unido.png", name: "en" },
+    { url: "/images/languages/brasil.png", name: "pt" },
   ];
 
   // restante do JSX igual, sem nenhuma alteração
@@ -78,6 +78,8 @@ export function HeaderComponent() {
                             className="uppercase flex justify-center"
                           >
                             <Image
+                              width={24}
+                              height={24}
                               src={lang.url as string}
                               alt={lang.name}
                               className="rounded-full w-5"
@@ -94,7 +96,9 @@ export function HeaderComponent() {
                           <Image
                             src={lang.url as string}
                             alt={lang.name}
-                            className="w-6 mx-auto"
+                            className="mx-auto"
+                            width={24}
+                            height={24}
                             key={i}
                           />
                         ),

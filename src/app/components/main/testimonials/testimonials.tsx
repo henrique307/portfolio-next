@@ -65,6 +65,9 @@ export function Testimonials() {
                     <div className="avatar">
                       <div className="w-12 rounded-full">
                         <Image
+                          width={6}
+                          height={6}
+                          unoptimized
                           className="object-center object-cover"
                           alt={`avaliação de ${testemunho.name}`}
                           src={
