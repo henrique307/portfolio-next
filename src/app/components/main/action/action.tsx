@@ -11,7 +11,7 @@ import { showAlert } from "@/app/utils/showAlert";
 export function CallToAction() {
   const [form, setForm] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [errorMessage, setErrorMessage] = useState<boolean | undefined>(
+  const [errorMessage, _] = useState<boolean | undefined>(
     undefined
   );
 

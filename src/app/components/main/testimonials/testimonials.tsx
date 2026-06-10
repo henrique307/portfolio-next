@@ -1,9 +1,10 @@
-"use client"
+"use client";
 
 import { Options, Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/css/skyblue";
 import { NextArrow } from "../../../utils/icons/icons";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 export function Testimonials() {
   const splideOptions: Options = {
@@ -26,15 +27,17 @@ export function Testimonials() {
       title: string;
       profile: string;
       evaluation: string;
-    }[],
+    }[];
     header: {
-      main_header: string,
-      sub_header: string
-    }
+      main_header: string;
+      sub_header: string;
+    };
   }
 
   const { t } = useTranslation("global");
-  const testimonialsTranslation = t("main.testimonials", {returnObjects: true}) as TestimonialTranslation;
+  const testimonialsTranslation = t("main.testimonials", {
+    returnObjects: true,
+  }) as TestimonialTranslation;
 
   return (
     <div
@@ -61,12 +64,12 @@ export function Testimonials() {
                   <div className="flex gap-3 items-center justify-center">
                     <div className="avatar">
                       <div className="w-12 rounded-full">
-                        <img
+                        <Image
                           className="object-center object-cover"
+                          alt={`avaliação de ${testemunho.name}`}
                           src={
-                            (testemunho.profile ||
-                              `https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=${testemunho.name}`) ||
-                            undefined
+                            testemunho.profile ||
+                            `https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=${testemunho.name}`
                           }
                         />
                       </div>

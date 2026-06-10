@@ -2,18 +2,13 @@
 
 import "./header.css";
 import { Logo } from "../../utils/logo";
-import { Settings, Themes } from "../../utils/icons/icons";
+import { Themes } from "../../utils/icons/icons";
 import { useTranslation } from "react-i18next";
-import { useRouter, usePathname } from "next/navigation";
-import Link from "next/link";
+import Image from "next/image";
 
 export function HeaderComponent() {
   const { t, i18n } = useTranslation("global");
   const navItems = t("header.sections", { returnObjects: true }) as NavItem[];
-  const router = useRouter();
-  const pathname = usePathname();
-
-  const locales = ["pt", "en", "es"];
 
   const langs = [
     { url: "images/languages/espanha.png", name: "es" },
@@ -82,7 +77,7 @@ export function HeaderComponent() {
                             href={`/${lang.name}`}
                             className="uppercase flex justify-center"
                           >
-                            <img
+                            <Image
                               src={lang.url as string}
                               alt={lang.name}
                               className="rounded-full w-5"
@@ -96,7 +91,7 @@ export function HeaderComponent() {
                     {langs.map(
                       (lang, i) =>
                         i18n.language === lang.name && (
-                          <img
+                          <Image
                             src={lang.url as string}
                             alt={lang.name}
                             className="w-6 mx-auto"
