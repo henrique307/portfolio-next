@@ -1,33 +1,27 @@
-"use client"
+"use client";
 
 import "./header.css";
 import { Logo } from "../../utils/logo";
 import { Settings, Themes } from "../../utils/icons/icons";
 import { useTranslation } from "react-i18next";
+import { useRouter, usePathname } from "next/navigation";
+import Link from "next/link";
 
 export function HeaderComponent() {
   const { t, i18n } = useTranslation("global");
   const navItems = t("header.sections", { returnObjects: true }) as NavItem[];
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const locales = ["pt", "en", "es"];
 
   const langs = [
-    {
-      url: "images/languages/espanha.png",
-      name: "es",
-    },
-    {
-      url: "images/languages/reino-unido.png",
-      name: "en",
-    },
-    {
-      url: "images/languages/brasil.png",
-      name: "pt",
-    },
+    { url: "images/languages/espanha.png", name: "es" },
+    { url: "images/languages/reino-unido.png", name: "en" },
+    { url: "images/languages/brasil.png", name: "pt" },
   ];
 
-  function handleLanguageChange(lang: string) {
-    i18n.changeLanguage(lang);
-  }
-
+  // restante do JSX igual, sem nenhuma alteração
   return (
     <section className="z-20 drawer text-base-content">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -64,7 +58,10 @@ export function HeaderComponent() {
                 {navItems.map((item, i) => {
                   return (
                     <li key={i}>
-                      <a className="text-clamp-subtext opacity-75" href={item.link}>
+                      <a
+                        className="text-clamp-subtext opacity-75"
+                        href={item.link}
+                      >
                         {item.nome}
                       </a>
                     </li>
@@ -72,19 +69,9 @@ export function HeaderComponent() {
                 })}
               </ul>
             </div>
-            <div className="dropdown dropdown-hover">
-              <div
-                tabIndex={0}
-                role="button"
-                className="btn m-1 bg-base-300 border-transparent"
-              >
-                <Settings className="bg-base-300" />
-              </div>
-              <ul
-                tabIndex={0}
-                className="dropdown-content gap-2 menu bg-base-100 rounded-box z-[1] w-fit p-2 shadow"
-              >
-                <Themes className="w-1/2 mx-auto aspect-square" />
+            <ul className="menu menu-horizontal flex-nowrap rounded-box">
+              <Themes className="w-1/3 mx-auto aspect-square" />
+              <li>
                 <details>
                   <ul>
                     {langs.map((lang, i) => {
@@ -92,26 +79,35 @@ export function HeaderComponent() {
                       return (
                         <li key={i}>
                           <a
-                            onClick={() => handleLanguageChange(lang.name)}
+                            href={`/${lang.name}`}
                             className="uppercase flex justify-center"
                           >
-                            <img src={lang.url as string} alt={lang.name} className="rounded-full w-5" />
+                            <img
+                              src={lang.url as string}
+                              alt={lang.name}
+                              className="rounded-full w-5"
+                            />
                           </a>
                         </li>
                       );
                     })}
                   </ul>
-                  <summary className="btn cursor-pointer bg-base-200">
+                  <summary className="btn cursor-pointer after:content-none p-0">
                     {langs.map(
                       (lang, i) =>
                         i18n.language === lang.name && (
-                          <img src={lang.url as string} alt={lang.name} className="min-w-6 mx-auto" key={i} />
-                        )
+                          <img
+                            src={lang.url as string}
+                            alt={lang.name}
+                            className="w-6 mx-auto"
+                            key={i}
+                          />
+                        ),
                     )}
                   </summary>
                 </details>
-              </ul>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
         {/* Page content here */}

@@ -1,15 +1,18 @@
-// app/providers.tsx
 "use client";
 
-import "@/app/translations/i18n";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { useEffect } from "react";
+import { useParams } from "next/navigation";
+import i18n from "../translations/i18n";
 
-const queryClient = new QueryClient();
+export function I18nProvider({ children }: { children: React.ReactNode }) {
+  const params = useParams();
+  const locale = (params?.locale as string) || "pt";
 
-export function Providers({ children }: { children: React.ReactNode }) {
-  return (
-    <QueryClientProvider client={queryClient}>
-      {children}
-    </QueryClientProvider>
-  )
+  useEffect(() => {
+    if (i18n.language !== locale) {
+      i18n.changeLanguage(locale);
+    }
+  }, [locale]);
+
+  return <>{children}</>;
 }
