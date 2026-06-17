@@ -69,6 +69,20 @@
         "link_text": "ver projeto",
         "cards": [
           {
+            "title": "Olho na Cota",
+            "thumbnail": "images/projects/olhoNaCota.png",
+            "description": "Projeto dedicado à analisar dados advindos da API puública oficial da camara dos deputados, detalhando e apresentando de formaorganizada despesas e fornecedores",
+            "link": "https://olhonacota.com.br",
+            "github": "https://github.com/henrique307/deputados"
+          },
+          {
+            "title": "Mythrune",
+            "thumbnail": "images/projects/mythrune.png",
+            "description": "Website de criação automática de fichas de Dungeons and Dragons com a finalidade de facilitar e agilizar a criação de fichas de RPG sem consultar diretamente o livro do jogador (protótipo)",
+            "link": "https://henrique307-dice-craft-automata.henrique-florencio307.workers.dev/",
+            "github": "https://github.com/henrique307/dice-craft-automata"
+          },
+          {
             "title": "Ecommerce Confeitaria",
             "thumbnail": "images/projects/cakes&sweets.png",
             "description": "E-comerce integrado com a API de pagamentos do Stripe, website tem o objetivo de apresentar ao cliente com beleza e concisão seus produtos e preços",

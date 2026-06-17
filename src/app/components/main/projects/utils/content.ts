@@ -14,6 +14,22 @@ export const projectIcons = [
   {
     icons: [
       icons.IconReact,
+      icons.IconTypescript,
+      icons.IconTailwindcss,
+      icons.IconAPI,
+    ],
+  },
+  {
+    icons: [
+      icons.IconReact,
+      icons.IconTypescript,
+      icons.IconTailwindcss,
+      icons.IconAPI,
+    ],
+  },
+  {
+    icons: [
+      icons.IconReact,
       icons.IconRedux,
       icons.IconTailwindcss,
       icons.IconStripe,
