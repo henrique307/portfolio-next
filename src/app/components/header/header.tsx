@@ -64,49 +64,54 @@ export function HeaderComponent() {
                 })}
               </ul>
             </div>
-            <ul className="menu menu-horizontal menu-lg flex-nowrap rounded-box">
+            <div className="menu menu-horizontal menu-lg flex-nowrap md:gap-4 gap-1 rounded-box items-center">
               <Themes className="w-1/3 mx-auto aspect-square" />
-              <li className="w-9 h-9">
-                <details className="my-auto">
-                  <ul className="gap-2 flex flex-col">
-                    {langs.map((lang, i) => {
-                      if (lang.name === i18n.language) return;
-                      return (
-                        <li key={i}>
-                          <a
-                            href={`/${lang.name}`}
-                            className="p-0"
-                          >
-                            <Image
-                              width={24}
-                              height={24}
-                              src={lang.url as string}
-                              alt={lang.name}
-                              className="rounded-full mx-auto max-h-8 max-w-8"
-                            />
-                          </a>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                  <summary className="btn cursor-pointer after:content-none h-fit min-h-fit p-0">
-                    {langs.map(
-                      (lang, i) =>
-                        i18n.language === lang.name && (
+
+              <div className="dropdown w-[24px] h-[24px]">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="btn btn-ghost border-none p-0 min-h-fit h-fit"
+                >
+                  {langs.map(
+                    (lang, i) =>
+                      i18n.language === lang.name && (
+                        <Image
+                          key={i}
+                          src={lang.url as string}
+                          alt={lang.name}
+                          width={24}
+                          height={24}
+                        />
+                      ),
+                  )}
+                </div>
+
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content menu bg-base-100 gap-2 rounded-box z-10 mt-2 w-12 p-2 shadow left-[-12]"
+                >
+                  {langs
+                    .filter((lang) => lang.name !== i18n.language)
+                    .map((lang) => (
+                      <li key={lang.name}>
+                        <a
+                          href={`/${lang.name}`}
+                          className="justify-center p-1"
+                        >
                           <Image
-                            src={lang.url as string}
-                            alt={lang.name}
-                            className="mx-auto"
                             width={24}
                             height={24}
-                            key={i}
+                            src={lang.url as string}
+                            alt={lang.name}
+                            className="rounded-full"
                           />
-                        ),
-                    )}
-                  </summary>
-                </details>
-              </li>
-            </ul>
+                        </a>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         {/* Page content here */}
