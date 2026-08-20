@@ -102,13 +102,13 @@ export function Projects() {
                     )}
                   </div>
                   <div className="bottom-0 w-full p-3 pt-0">
-                    <h1 className="text-clamp-subtitle cursor-default mt-5">
+                    <h1 className="text-clamp-title cursor-default mt-2 font-semibold font-mono">
                       {project.title}
                     </h1>
 
                     <article
                       style={scrollprops}
-                      className="text-clamp-text opacity-75 my-5 max-h-[120px] overflow-y-auto"
+                      className="text-clamp-text opacity-75 mb-5 mt-1 max-h-[120px] overflow-y-auto"
                     >
                       {project.description}
                     </article>

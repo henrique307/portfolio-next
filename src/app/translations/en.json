@@ -69,6 +69,20 @@
         "link_text": "view project",
         "cards": [
           {
+            "title": "Olho na Cota",
+            "thumbnail": "images/projects/olhoNaCota.png",
+            "description": "Project dedicated to analyzing data from the official public API of the Chamber of Deputies, detailing and presenting expenses and suppliers in an organized manner.",
+            "link": "https://olhonacota.com.br",
+            "github": "https://github.com/henrique307/deputados"
+          },
+          {
+            "title": "Mythrune",
+            "thumbnail": "images/projects/mythrune.png",
+            "description": "Website for automatically creating Dungeons & Dragons character sheets, designed to simplify and speed up RPG character creation without having to directly consult the Player's Handbook (prototype).",
+            "link": "https://henrique307-dice-craft-automata.henrique-florencio307.workers.dev/",
+            "github": "https://github.com/henrique307/dice-craft-automata"
+          },
+          {
             "title": "Bakery Ecommerce",
             "thumbnail": "images/projects/cakes&sweets.png",
             "description": "E-commerce integrated with the Stripe payments API. The website aims to present products and prices to customers with clarity and visual appeal.",
