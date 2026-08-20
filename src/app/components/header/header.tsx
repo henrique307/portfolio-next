@@ -122,7 +122,7 @@ export function HeaderComponent() {
                   })}
                 </ul>
               </li>
-            </ul>
+            </div>
           </div>
         </div>
         {/* Page content here */}
