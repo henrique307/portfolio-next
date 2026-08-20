@@ -82,7 +82,7 @@ export function HeaderComponent() {
                 })}
               </ul>
             </div>
-            <ul className="menu menu-horizontal menu-lg flex-nowrap rounded-box">
+            <div className="menu menu-horizontal menu-lg flex-nowrap md:gap-4 gap-1 rounded-box items-center">
               <Themes className="w-1/3 mx-auto aspect-square" />
               <li className="w-9 h-9 dropdown dropdown-bottom flex justify-center items-center">
                 <button tabIndex={0} role="button" className="btn ml-1 p-0 h-9 bg-base-300 border-none">
