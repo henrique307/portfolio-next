@@ -102,7 +102,7 @@ export function Projects() {
                     )}
                   </div>
                   <div className="bottom-0 w-full p-3 pt-0">
-                    <h1 className="text-clamp-title cursor-default mt-2 font-semibold font-mono">
+                    <h1 className="text-clamp-subtitle cursor-default mt-2 font-semibold font-mono">
                       {project.title}
                     </h1>
 
