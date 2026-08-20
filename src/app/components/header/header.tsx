@@ -5,16 +5,34 @@ import { Logo } from "../../utils/logo";
 import { Themes } from "../../utils/icons/icons";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 export function HeaderComponent() {
   const { t, i18n } = useTranslation("global");
   const navItems = t("header.sections", { returnObjects: true }) as NavItem[];
+  const [open, setOpen] = useState<boolean>(false);
+  const dropdownRef = useRef<HTMLLIElement>(null);
+
+
 
   const langs = [
     { url: "/images/languages/espanha.png", name: "es" },
     { url: "/images/languages/reino-unido.png", name: "en" },
     { url: "/images/languages/brasil.png", name: "pt" },
   ];
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   // restante do JSX igual, sem nenhuma alteração
   return (
@@ -66,45 +84,43 @@ export function HeaderComponent() {
             </div>
             <ul className="menu menu-horizontal menu-lg flex-nowrap rounded-box">
               <Themes className="w-1/3 mx-auto aspect-square" />
-              <li className="w-9 h-9">
-                <details className="my-auto">
-                  <ul className="gap-2 flex flex-col">
-                    {langs.map((lang, i) => {
-                      if (lang.name === i18n.language) return;
-                      return (
-                        <li key={i}>
-                          <a
-                            href={`/${lang.name}`}
-                            className="p-0"
-                          >
-                            <Image
-                              width={24}
-                              height={24}
-                              src={lang.url as string}
-                              alt={lang.name}
-                              className="rounded-full mx-auto max-h-8 max-w-8"
-                            />
-                          </a>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                  <summary className="btn cursor-pointer after:content-none h-fit min-h-fit p-0">
-                    {langs.map(
-                      (lang, i) =>
-                        i18n.language === lang.name && (
+              <li className="w-9 h-9 dropdown dropdown-bottom flex justify-center items-center">
+                <button tabIndex={0} role="button" className="btn ml-1 p-0 h-9 bg-base-300 border-none">
+                  {langs.map(
+                    (lang, i) =>
+                      i18n.language === lang.name && (
+                        <Image
+                          src={lang.url as string}
+                          alt={lang.name}
+                          className="mx-auto"
+                          width={26}
+                          height={26}
+                          key={i}
+                        />
+                      ),
+                  )}
+                </button>
+                <ul tabIndex={-1} className="dropdown-content menu bg-base-100 rounded-box z-1 shadow-sm gap-2 before:bg-transparent" style={{marginLeft: 5}}>
+                  {langs.map((lang, i) => {
+                    if (lang.name === i18n.language) return;
+                    return (
+                      <li key={i}>
+                        <a
+                          href={`/${lang.name}`}
+                          className="p-0"
+                        >
                           <Image
-                            src={lang.url as string}
-                            alt={lang.name}
-                            className="mx-auto"
                             width={24}
                             height={24}
-                            key={i}
+                            src={lang.url as string}
+                            alt={lang.name}
+                            className="rounded-full mx-auto max-h-8 max-w-8"
                           />
-                        ),
-                    )}
-                  </summary>
-                </details>
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
               </li>
             </ul>
           </div>
